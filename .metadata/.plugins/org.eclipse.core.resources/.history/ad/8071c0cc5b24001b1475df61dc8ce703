@@ -1,0 +1,18 @@
+package br.com.XPTO.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.XPTO.modelo.Elevador;
+
+public class TesteElevador {
+
+	public static void main(String[] args) {
+
+		Elevador objeto = new Elevador();
+		objeto.preencherCapacidadePessoas(Integer.parseInt(JOptionPane.showInputDialog("Capacidade Elevador : ")));
+		objeto.entrar(Integer.parseInt(JOptionPane.showInputDialog("Pessoas entrando : ")));
+	}
+
+}
+
+

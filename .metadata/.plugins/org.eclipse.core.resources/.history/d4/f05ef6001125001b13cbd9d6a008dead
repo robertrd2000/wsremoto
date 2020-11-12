@@ -1,0 +1,39 @@
+package br.com.ecommerce.implementacao;
+
+import br.com.ecommerce.beans.Cliente;
+import br.com.ecommerce.beans.Endereco;
+import br.com.ecommerce.beans.Produto;
+import br.com.ecommerce.beans.Venda;
+
+public class ImplementarEcommerce {
+
+	public static void main(String[] args) {
+		
+		Venda vende = new Venda(
+				100,
+				"10-10-2020",
+				new Cliente (
+						30,
+						"Robert Rodrigues",
+						"561.502.960-91",
+						new Endereco( 
+						"AVENIDA PAULISTA",
+						"100",
+						true,
+						"PAULISTA",
+						"SÃO PAULO",
+						"SP",
+						"9999-900"
+						)),
+				new Produto (
+						"carros",
+						100,
+						90,
+						77,
+						10)
+				);
+		System.out.println(prof.getAll());
+
+	}
+
+}

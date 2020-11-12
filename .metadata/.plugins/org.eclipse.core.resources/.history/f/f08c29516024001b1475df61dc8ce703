@@ -1,0 +1,31 @@
+package br.com.XPTO.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.XPTO.modelo.Elevador;
+
+public class TesteElevador {
+
+	public static void main(String[] args) {
+
+		Elevador objeto = new Elevador();
+		objeto.subir();
+		System.out.println("Qtde de pessoas: " + objeto.retornarTudo());
+		objeto.subir();
+		objeto.subir();
+		System.out.println("Qtde de pessoas: " + objeto.retornarTudo());
+		
+		objeto.preencherCapacidadePessoas(Integer.parseInt(JOptionPane.showInputDialog("Capacidade Elevador : ")));
+		objeto.entrar(Integer.parseInt(JOptionPane.showInputDialog("Pessoas entrando : ")));
+		System.out.println("Qtde de pessoas: " + objeto.exibirPessoas());
+		objeto.entrar(Integer.parseInt(JOptionPane.showInputDialog("Pessoas entrando : ")));
+		System.out.println("Qtde de pessoas: " + objeto.exibirPessoas());
+		
+		objeto.sair(Integer.parseInt(JOptionPane.showInputDialog("Pessoas saindo : ")));
+		System.out.println("Qtde saindo " + objeto.exibirPessoas());
+		
+	}
+
+}
+
+

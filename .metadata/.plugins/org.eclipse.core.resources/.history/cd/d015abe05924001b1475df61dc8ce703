@@ -1,0 +1,46 @@
+package br.com.XPTO.modelo;
+
+public class Elevador {
+
+	private int andarAtual;
+	private int andarMaximo;
+	private int capacidadePessoas;
+	private int qtdePessoas;
+	private String nome;
+
+	public void entrar(int pQtde) {
+		qtdePessoas+=pQtde;
+		if(qtdePessoas>10) {
+			System.out.println("Execedeu a capacidade do elevador");
+		}
+		
+	}
+	public void sair(int pQtde) {
+		qtdePessoas=pQtde;
+		if (qtdePessoas>0) {
+			qtdePessoas-=pQtde;
+		}
+	}
+	public int subir() {
+		andarAtual=+1;
+		if(andarAtual>andarMaximo) {
+			System.out.println("Andar inválido");
+		}else if (andarAtual==0) {
+			System.out.println("Andar inválido-Terreo");
+		}
+		return andarMaximo;
+	}
+	public int descer() {
+		return andarAtual;
+	}
+	public String retornarTudo() {
+		return 
+				"Andar Atual......: " + andarAtual+ "\n" +
+				"Andar Máximo.....: " + andarMaximo+ "\n" +
+				"Capacidade.......: " + capacidadePessoas+ "\n" +
+				"Qtde Pessoas.....: " + qtdePessoas+ "\n" +
+				"Nome.............: " + nome;
+	}
+		
+	
+}

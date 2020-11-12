@@ -1,0 +1,33 @@
+package br.com.XPTO.modelo;
+
+public class Elevador {
+
+	private int andarAtual;
+	private int andarMaximo;
+	private int capacidadePessoas;
+	private int qtdePessoas;
+	private String nome;
+
+	public void entrar(int pQtde) {
+		qtdePessoas=pQtde;
+	}
+	public void sair(int pQtde) {
+		qtdePessoas=pQtde;
+	}
+	public int subir() {
+		return andarMaximo;
+	}
+	public int descer() {
+		return andarAtual;
+	}
+	public String retornarTudo() {
+		return 
+				"Andar Atual......: " + andarAtual+ "\n" +
+				"Andar Máximo.....: " + andarMaximo+ "\n" +
+				"Capacidade.......: " + capacidadePessoas+ "\n" +
+				"Qtde Pessoas.....: " + qtdePessoas+ "\n" +
+				"Nome.............: " + nome;
+	}
+		
+	
+}

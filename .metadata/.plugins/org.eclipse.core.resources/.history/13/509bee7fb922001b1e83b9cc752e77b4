@@ -1,0 +1,24 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class Notas {
+	/*
+	 * Solicitar um nome de aluno e duas notas, calcular a media
+	 * e exibir uma mensagem para o aluno da seguinte forma:
+	 * "Aluno xxxxxxx, sua média obtida foi: xxxxx para 10
+	 */
+
+	public static void main(String[] args) {
+    
+		String nome = JOptionPane.showInputDialog("Digite o Nome do Aluno");
+		double nota1 = Double.parseDouble(JOptionPane.showInputDialog("Digite Nota 01"));
+		double nota2 = Double.parseDouble(JOptionPane.showInputDialog("Digite Nota 02"));
+		
+		double media = nota1+nota2/2;
+		
+		System.out.printf("%s sua média obtida foi: %.2f\n ", nome, media);
+	
+	}
+
+}

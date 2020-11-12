@@ -1,0 +1,19 @@
+package repeticao;
+
+public class ExemploFor {
+
+	public static void main(String[] args) {
+	
+		// Sintaxe do comando FOR convencional
+		//*
+		// 1ª - valor que começa o laço e variavel que vai contar
+		// 2º - condição (até quando contar?)
+		// 3º - como ele vai contar? de 1 em 1.. 2 em 2
+		
+		for (int cont=0;cont<500;cont+=2) {
+			System.out.println("Valor " + cont);
+		}
+
+	}
+
+}
